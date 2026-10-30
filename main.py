@@ -45,4 +45,5 @@ comments1 = Comments.objects.get(id = 1)
 #     # date = models.DateField(),
 #     )
 post1 = Post.objects.get(id = 1 )
-post1.comment.add(comments1)
+# post1.comment.add(comments1)
+post1.corect_post("Зміна для приклада")

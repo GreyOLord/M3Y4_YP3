@@ -24,10 +24,9 @@ class Post(models.Model):
     def __str__(self):
         return self.name
 
-    def corect_post(self):
-        corect = str(input("Напиши новий текст поста"))
+    def corect_post(self,corect):
         self.content = corect
-        self.save()
+        self.save(update_fields=['content'])
 
 
 
